@@ -1,0 +1,26 @@
+{
+  "name": "htdocs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start":"node server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sahil0604/Project_Server.git"
+  },
+  "engine":{
+    "node":"12.18.3"
+  },
+  "author": "\"\"\u001b[DSahil Shaikh\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sahil0604/Project_Server/issues"
+  },
+  "homepage": "https://github.com/sahil0604/Project_Server#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

@@ -8,8 +8,10 @@
     <body>
     <div class="container" ng-controller="mController as mc">
     <dv class="row"><div class="form-group">
+    <label for ="usr">Name:</label>
+    <input type="text" class="form-control" id="name" ng-bind="message">
     <label for ="usr">Message:</label>
-    <input type="text" class="form-control" id="usr" ng-bind="message">
+    <input type="text" class="form-control" id="message" >
     <button  class="btn btn-primary">Submit</button>
     </div>
     <ul>

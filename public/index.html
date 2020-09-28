@@ -1,23 +1,28 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" ng-app='MenuApp'>
-    <head>
-        <meta charset="utf-8">
-        <title></title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    </head>
-    <body>
-    <div class="container" ng-controller="mController as mc">
-    <dv class="row"><div class="form-group">
-    <label for ="usr">Name:</label>
-    <input type="text" class="form-control" id="name" ng-bind="message">
-    <label for ="usr">Message:</label>
-    <input type="text" class="form-control" id="message" >
-    <button  class="btn btn-primary">Submit</button>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Join | ChatApp</title>
+    <meta name="viewport" content="width=device-width, inital-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body class="centered-form">
+    <div class="centered-form__form">
+      <form action="/chat.html">
+        <div class="form-field"><h3>Join Chat</h3></div>
+        <div class="form-field">
+          <label>Display name</label>
+          <input type="text" name="name" autofocus>
+        </div>
+        <div class="form-field">
+          <label>Room name</label>
+          <input type="text" name="room" autofocus>
+        </div>
+        <div class="form-field">
+          <button>Join</button>
+        </div>
+      </form>
     </div>
-    <ul>
-    </ul></div></div>
-    <script src="/js/jquery-2.1.4.min.js"></script>
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="/js/index.js"></script>
-    </body>
+
+  </body>
 </html>
